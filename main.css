@@ -1,0 +1,239 @@
+/*
+  Coding from Life – Sketch 2: fluid layout
+
+  For sketch 2 you'll be positioning elements relative to a fluid container. This
+  means you'll need to use percentages when positioning and sizingelements within
+  your frame.
+*/
+
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: #ecdff7;
+  margin: 2.5vw auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+.table {
+  position: absolute;
+  left: 17vw;
+  width: 60vw;
+  height: 30vw;
+  bottom: 0%;
+  background-color: ivory;
+  background-image: linear-gradient(to bottom right, ivory, grey);
+  z-index: 1;
+  transform: skew(48deg); 
+}
+
+.birdbase {
+  position: absolute;
+  left: 17vw;
+  width: 10vw;
+  height: 5vw;
+  bottom: 40%;
+  background-color: black;
+  z-index: 3;
+  transform: skew(48deg);
+}
+
+.birdstick {
+ position: absolute;
+    width: 1vw;
+    height: 15vw;
+    bottom: 39%;
+    left: 22%;
+    background-color: black;
+    z-index: 3;
+}
+
+.birdbod {
+position: absolute;
+    width: 9%;
+    height: 7%;
+    transform: rotate(17deg);
+    background: black;
+    border-radius: 50%;
+    left: 18%;
+    bottom: 61%;
+    z-index: 5;
+}
+
+.birdhead {
+    position: absolute;
+    bottom: 60%;
+    left: 22%;
+    width: 5%;
+    height: 7%;
+    background: black;
+    z-index: 5;
+    transform: rotate(-15deg);
+    border-radius: 100% / 100%;
+}
+
+.birdbeak {
+    width: 0;
+    height: 0;
+    border-top: 0.63vw solid transparent;
+    border-bottom: 0.63vw solid transparent;
+    border-left: 2.1vw solid black;
+    position: absolute;
+    top: 35%;
+    left: 25vw;
+    z-index: 5;
+    }
+
+    .birdbeak-2 {
+    width: 0;
+    height: 0;
+    border-top: 1vw solid transparent;
+    border-bottom: 1vw solid transparent;
+    border-left: 2.1vw solid black;
+    position: absolute;
+    top: 35%;
+    left: 25vw;
+    z-index: 5;
+    }
+.birdwing {
+    width: 0;
+    height: 0;
+    border-top: 2vw solid transparent;
+    border-bottom: 2vw solid transparent;
+    border-left: 5vw solid black;
+    position: absolute;
+    top: 28%;
+    left: 18vw;
+    z-index: 5;
+    transform: rotate(17deg);}
+}
+.vase {
+  position: absolute;
+  z-index: 3;
+  background-image: linear-gradient(to bottom right, darkblue, white);
+    bottom: 17vw;
+    left: 35vw;
+    width: 10vw;
+    height: 25vw;
+    opacity: 60%;
+}
+
+.flower{
+   position: absolute;
+  bottom: 17vw;
+    left: 42vw;
+    width: 1vw;
+    height: 30vw;
+     background-color: green;
+    z-index: 2;
+}
+
+.flower-1 {
+   position: absolute;
+  bottom: 17vw;
+    left: 37vw;
+    width: 1vw;
+    height: 30vw;
+     background-color: green;
+    z-index: 2;
+}
+
+.rose {
+    position: absolute;
+    width: 9%;
+    height: 7%;
+    transform: rotate(-20deg);
+    background: red;
+    border-radius: 50%;
+    left: 34%;
+    bottom: 79%;
+    z-index: 2;
+}
+
+.rose-2 {
+    position: absolute;
+    width: 9%;
+    height: 7%;
+    background: darkred;
+    border-radius: 50%;
+    left: 41%;
+    bottom: 77%;
+    z-index: 2;
+}
+
+.pumpkin {
+  position: absolute;
+  left: 45%;
+  z-index: 2;
+  width: 27%;
+  height: 27%;
+  background-image: linear-gradient(to bottom right,  #FF4500, orange);
+  bottom: 10%;
+  top: -10;
+  border-radius: 100% / 100%;
+transform: rotate(-10deg);}
+
+.pumpkine {
+ position: absolute;
+  left: 48%;
+  z-index: 4;
+  width: 20%;
+  height: 20%;
+  background-image: linear-gradient(to bottom right,  #FF4500, orange);
+  bottom: 20%;
+  top: -10;
+  border-radius: 100% / 100%;
+transform: rotate(-10deg);
+}
+
+.pumpkinstem {
+   position: absolute;
+    width: 2%;
+    height: 4%;
+    bottom: 37%;
+    left: 56%;
+    background-color: brown;
+  background-image: linear-gradient(to bottom right,  beige, brown);
+    z-index: 5;
+    transform: rotate(20deg);
+}
+  .gourd {
+  position: absolute;
+  left: 18%;
+  z-index: 4;
+  width: 20%;
+  height: 22%;
+ background: ivory;
+  bottom: 20%;
+  top: -10;
+  border-radius: 100% / 100%;
+transform: rotate(12deg);}
+
+.gourde {
+  position: absolute;
+  left: 24%;
+  z-index: 5;
+  width: 20%;
+  height: 27%;
+  background: ivory;
+  bottom: 18%;
+  top: -10;
+  border-radius: 100% / 100%;
+transform: rotate(12deg);}
+
+.gourdstem {
+    position: absolute;
+    width: 2%;
+    height: 4%;
+    bottom: 28%;
+    left: 42%;
+    background-color: brown;
+  background-image: linear-gradient(to bottom right,  beige, brown);
+    z-index: 5;
+    transform: rotate(87deg);
+}
